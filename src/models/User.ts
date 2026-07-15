@@ -8,7 +8,7 @@ export interface IUser extends Document {
 }
 
 const userSchema = new Schema<IUser>({
-  email: {
+  email: { 
     type: String,
     required: true,
     unique: true,
@@ -16,18 +16,18 @@ const userSchema = new Schema<IUser>({
   googleId: {
     type: String,
     required: true,
-  },
+  },    
   accessToken: {
     type: String,
     required: true,
-  },
+  },                          
   refreshToken: {
     type: String,
     required: true,
   },
 },
 {
-  timestamps: true,
+  timestamps: true,   
 }
 );
 
